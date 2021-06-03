@@ -6,8 +6,25 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>JavaScript Speaking</title>
     <script src="script.js" defer></script>
+    <style>
+        body {
+            width: 90%;
+            margin: 0 auto;
+        }
+        #text {
+            min-width: 100%;
+            min-height: 50vh;
+            max-width: 100%;
+            max-height: 50vh;
+        }
+    </style>
 </head>
 <body>
-
+    <textarea id="text"></textarea>
+    <label for="speed">Speed</label>
+    <input id="speed" type="number" min=".5" max="3" step=".5" value="1">
+    <button id="play-button">Play</button>
+    <button id="pause-button">Pause</button>
+    <button id="stop-button">Stop</button>
 </body>
 </html>
